@@ -2,36 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Header -->
+ 
   <header class="header">
     <div class="header-text">
-      <h1>[Your Name]</h1>
-      <p>[Your Professional Title]</p>
-      <button id="toggle-theme">Toggle Dark/Light</button>
+      <h1>Muhammad Abdullah</h1>
+      <p>Aspiring Full Stack Developer</p>
+      <button id="toggle-theme">Toggle Dark / Light</button>
     </div>
     <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
   </header>
 
-  <!-- About -->
+  
   <section>
     <h2>About Me</h2>
-    <p>[Write a short introduction about yourself here]</p>
+    <p>
+      Motivated Computer Science undergraduate at FAST-NUCES with strong programming, problem-solving,
+and software development skills. Experienced in academic projects involving basic web development,
+databases, and introductory AI/ML. Proficient with modern tools and frameworks, translating theoretical
+knowledge into practical solutions. Quick learner with effective teamwork, communication, and
+organizational abilities, eager to contribute to real-world projects and grow as a software professional.
+
+    </p>
   </section>
 
-  <!-- Education -->
+ 
   <section>
     <h2>Education</h2>
-    <p>[Enter university name here]</p>
-    <p>[Degree name, year]</p>
+    <ul class="list">
+      <li><strong>University:</strong> National University of Computer and Emerging Sciences/li>
+      <li><strong>College:</strong> Punjab College of Science</li>
+      <li><strong>School:</strong> Divisional Public School Model Town Lahore</li>
+    </ul>
   </section>
 
-  <!-- Skills -->
+
   <section>
     <h2>Skills</h2>
     <div class="skills">
@@ -42,35 +52,49 @@
     </div>
   </section>
 
-  <!-- Experience / Projects -->
+
   <section>
-    <h2>Experience / Projects</h2>
-    <p>[Project or job title]</p>
-    <p>[Brief description]</p>
+    <h2>Projects</h2>
+    <ul class="list">
+      <li>
+        <strong>Project 1:</strong> FASTConceptPrep – Domain: AI/ML
+A classification system which classifies input questions into respective course, topic and difficulty
+Retrieves questions similar to the input question from the dataset using semantic search
+Implemented 2 ml models, 2 dl models and 1 transformer
+Evaluated models on Accuracy, F1 score, Precision, Exact Match
+      </li>
+      <li>
+        <strong>Project 2:</strong> Menz – Domain: Web Deveolpment
+E-Commerce Website
+Tech Stack: React, django, PostgreSQL
+Incorporated OOP concepts, design patterns and SOLID principles
+Used Figma for ui
+      </li>
+    </ul>
   </section>
 
-  <!-- Contact -->
+
   <section>
     <h2>Contact Information</h2>
-    <p>Email: [your@email.com]</p>
-    <p>Phone: [Your phone number]</p>
+    <p>Email: [ma441538@gmail.com]</p>
+    <p>Phone: [+92323 9665583]</p>
     <p>LinkedIn: [Profile link]</p>
   </section>
 
-  <!-- Download CV -->
   <section>
     <a href="#" class="download-btn">Download CV (PDF)</a>
   </section>
 
-  <!-- Footer -->
+
   <footer>
-    <p>© [Year] [Your Name]</p>
+    <p>© 2026 Muhammad Abdullah</p>
   </footer>
 
+  
   <script>
-    document.getElementById("toggle-theme").onclick = () => {
+    document.getElementById("toggle-theme").addEventListener("click", function () {
       document.body.classList.toggle("dark");
-    };
+    });
   </script>
 
 </body>

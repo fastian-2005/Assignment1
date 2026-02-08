@@ -6,17 +6,17 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #222;
+  background-color: #ffffff;
+  color: #222222;
   line-height: 1.6;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  background: #f4f4f4;
+  background-color: #f4f4f4;
   flex-wrap: wrap;
 }
 
@@ -29,9 +29,10 @@ header {
 .profile-img {
   width: 120px;
   height: 120px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
 }
+
 
 section {
   padding: 30px;
@@ -41,6 +42,17 @@ h2 {
   margin-bottom: 10px;
 }
 
+
+.list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
+
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -48,45 +60,53 @@ h2 {
 }
 
 .skills span {
-  background: #e0e0e0;
+  background-color: #e0e0e0;
   padding: 8px 12px;
   border-radius: 5px;
+}
+
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 .download-btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #222;
-  color: white;
+  background-color: #222222;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
 }
 
+
 footer {
   text-align: center;
   padding: 20px;
-  background: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
-/* Dark mode */
+
 body.dark {
-  background: #121212;
+  background-color: #121212;
   color: #f1f1f1;
 }
 
 body.dark header,
 body.dark footer {
-  background: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 body.dark .skills span {
-  background: #333;
+  background-color: #333333;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
-  header {
+  .header {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
 }
