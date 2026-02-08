@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Base */
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -11,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -33,7 +35,7 @@ body {
   object-fit: cover;
 }
 
-
+/* Sections */
 section {
   padding: 30px;
 }
@@ -42,30 +44,36 @@ h2 {
   margin-bottom: 10px;
 }
 
-
+/* Lists (Education & Projects) */
 .list {
   list-style: disc;
   padding-left: 20px;
 }
 
 .list li {
+  margin-bottom: 12px;
+}
+
+.list li p {
+  margin-top: 4px;
+}
+
+/* Skills */
+.skills-block p {
   margin-bottom: 8px;
 }
 
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* Contact links */
+a {
+  color: #0066cc;
+  text-decoration: none;
 }
 
-.skills span {
-  background-color: #e0e0e0;
-  padding: 8px 12px;
-  border-radius: 5px;
+a:hover {
+  text-decoration: underline;
 }
 
-
+/* Buttons */
 button {
   padding: 8px 12px;
   cursor: pointer;
@@ -73,6 +81,7 @@ button {
 
 .download-btn {
   display: inline-block;
+  margin-top: 10px;
   padding: 10px 20px;
   background-color: #222222;
   color: #ffffff;
@@ -80,14 +89,14 @@ button {
   border-radius: 5px;
 }
 
-
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background-color: #f4f4f4;
 }
 
-
+/* Dark mode */
 body.dark {
   background-color: #121212;
   color: #f1f1f1;
@@ -98,11 +107,16 @@ body.dark footer {
   background-color: #1f1f1f;
 }
 
-body.dark .skills span {
-  background-color: #333333;
+body.dark a {
+  color: #4da3ff;
 }
 
+body.dark .download-btn {
+  background-color: #f1f1f1;
+  color: #121212;
+}
 
+/* Responsive */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
