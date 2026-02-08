@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV Website</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- Header -->
   <header class="header">
-    <h1>Your Name</h1>
-    <p>Your Title</p>
+    <div class="header-text">
+      <h1>[Your Name]</h1>
+      <p>[Your Professional Title]</p>
+      <button id="toggle-theme">Toggle Dark/Light</button>
+    </div>
+    <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
   </header>
 
-  <section id="about">
+  <!-- About -->
+  <section>
     <h2>About Me</h2>
-    <p>Dummy text</p>
+    <p>[Write a short introduction about yourself here]</p>
   </section>
 
-  <section id="education">
+  <!-- Education -->
+  <section>
     <h2>Education</h2>
-    <p>Dummy text</p>
+    <p>[Enter university name here]</p>
+    <p>[Degree name, year]</p>
   </section>
 
-  <section id="skills">
+  <!-- Skills -->
+  <section>
     <h2>Skills</h2>
-    <p>Dummy text</p>
+    <div class="skills">
+      <span>[Skill 1]</span>
+      <span>[Skill 2]</span>
+      <span>[Skill 3]</span>
+      <span>[Skill 4]</span>
+    </div>
   </section>
 
-  <section id="experience">
+  <!-- Experience / Projects -->
+  <section>
     <h2>Experience / Projects</h2>
-    <p>Dummy text</p>
+    <p>[Project or job title]</p>
+    <p>[Brief description]</p>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Dummy text</p>
+  <!-- Contact -->
+  <section>
+    <h2>Contact Information</h2>
+    <p>Email: [your@email.com]</p>
+    <p>Phone: [Your phone number]</p>
+    <p>LinkedIn: [Profile link]</p>
   </section>
 
+  <!-- Download CV -->
+  <section>
+    <a href="#" class="download-btn">Download CV (PDF)</a>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2026</p>
+    <p>© [Year] [Your Name]</p>
   </footer>
+
+  <script>
+    document.getElementById("toggle-theme").onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+  </script>
 
 </body>
 </html>
